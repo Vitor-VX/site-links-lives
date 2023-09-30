@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/painel.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <title>Painel</title>
+</head>
+
+<body>
+
+  <form id="streamerForm">
+    <h2>Adicionar Streamer</h2>
+    <label for="name">Nome:</label>
+    <input type="text" id="name" required>
+
+    <label for="twitchURL">URL do Twitch:</label>
+    <input type="text" id="twitchURL" required>
+
+    <label for="instagramURL">URL do Instagram:</label>
+    <input type="text" id="instagramURL" required>
+
+    <label for="twitterURL">URL do Twitter:</label>
+    <input type="text" id="twitterURL" required>
+
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <h2>Streamers Cadastrados:</h2>
+  <ul id="streamerList"></ul>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../scripts/scriptPainel.js"></script>
+</body>
+
+</html>
